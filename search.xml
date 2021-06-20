@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>test</title>
+    <url>/2021/06/20/test/</url>
+    <content><![CDATA[<p><img src="/2021/06/20/test/DSC03116-1.jpg" alt="DSC03116-1"></p>
+<p>测试图片上传</p>
+<p><img src="/2021/06/20/test/DSC02894.jpg" alt="DSC02894"></p>
+<p>测试动图</p>
+<p><img src="/2021/06/20/test/dongtu.gif" alt="dongtu"></p>
+<p>bilibili测试</p>
+<iframe src="http://player.bilibili.com/player.html?aid=24931813&cid=42084760&page=1" scrolling="no" width="800px" height="600px" border="0" frameborder="no" framespacing="0" allowfullscreen="true">
+    
+</iframe>
+
+ 
+
+<p>本地视频测试</p>
+<p><video src="test/C0011.mp4" width="800px" height="400px" controls="controls"></video></p>
+]]></content>
+      <categories>
+        <category>其他</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+</search>
