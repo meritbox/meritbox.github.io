@@ -16,7 +16,9 @@
  
 
 <p>本地视频测试</p>
-<p><video src="test/C0011.mp4" width="800px" height="400px" controls="controls"></video></p>
+<video src="test/C0011.mp4" type="video/mp4" controls="controls" width="100%" height="100%">
+</video>
+
 ]]></content>
       <categories>
         <category>其他</category>
