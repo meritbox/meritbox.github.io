@@ -186,6 +186,110 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://meritbox.github.io/2021/06/20/npm%E9%80%9F%E6%9F%A5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/panda.jpg">
+      <meta itemprop="name" content="Nauyiz">
+      <meta itemprop="description" content="很懒，不爱写博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="功德箱">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2021/06/20/npm%E9%80%9F%E6%9F%A5/" class="post-title-link" itemprop="url">npm速查表</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2021-06-20 21:54:39 / 修改时间：21:56:12" itemprop="dateCreated datePublished" datetime="2021-06-20T21:54:39+08:00">2021-06-20</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%89%8D%E7%AB%AF/" itemprop="url" rel="index"><span itemprop="name">前端</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><strong>注：</strong></p>
+<p>在npm中，包（package）、模块（module）、依赖（dependency）说的都是一回事儿。</p>
+<h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><ul>
+<li><code>npm init</code> 初始化项目，其实就是创建一个<code>package.json</code>文件。</li>
+<li><code>npm install</code> 安装所有项目依赖。</li>
+<li><code>npm help xxx</code> 查看<code>xxx</code>命令的帮助信息。</li>
+</ul>
+<h3 id="npm-search-搜索（快捷方式：find-s）"><a href="#npm-search-搜索（快捷方式：find-s）" class="headerlink" title="npm search 搜索（快捷方式：find, s）"></a><code>npm search</code> 搜索（快捷方式：<code>find</code>, <code>s</code>）</h3><ul>
+<li><code>xxx</code> 搜索<code>xxx</code> 如：<code>npm search jquery</code>。</li>
+</ul>
+<h3 id="npm-install-安装-（快捷方式：i）"><a href="#npm-install-安装-（快捷方式：i）" class="headerlink" title="npm install 安装 （快捷方式：i）"></a><code>npm install</code> 安装 （快捷方式：<code>i</code>）</h3><ul>
+<li><code>xxx</code> 搜索并安装xxx（局部）。安装多个依赖可用空格分割，如<code>npm i jquery bootstrap</code>。</li>
+<li><code>xxx -g</code> 搜索并安装xxx（全局）。安装多个同上。</li>
+<li><code>xxx -D</code> 安装并将依赖信息写在<code>package.json</code>中的<code>devDependencies</code>中。</li>
+<li>快捷方式 <code>i</code>均可，如<code>npm i jquery</code>。</li>
+<li><code>xxx@版本号</code> 指定需要安装的版本号，若不指定将安装最新的稳定版本。</li>
+</ul>
+<h3 id="npm-uninstall-卸载（快捷方式：rm-r）"><a href="#npm-uninstall-卸载（快捷方式：rm-r）" class="headerlink" title="npm uninstall 卸载（快捷方式：rm, r）"></a><code>npm uninstall</code> 卸载（快捷方式：<code>rm</code>, <code>r</code>）</h3><ul>
+<li><code>xxx</code> 卸载xxx。多个依赖可用空格分割。</li>
+<li><code>xxx -D</code> 卸载xxx，并将依赖信息从<code>package.json</code>中的<code>devDependencies</code>中清除。</li>
+</ul>
+<h3 id="npm-list-列出已安装依赖（快捷方式：ls）"><a href="#npm-list-列出已安装依赖（快捷方式：ls）" class="headerlink" title="npm list 列出已安装依赖（快捷方式：ls）"></a><code>npm list</code> 列出已安装依赖（快捷方式：<code>ls</code>）</h3><ul>
+<li>默认列出局部依赖。</li>
+<li><code>npm list -g</code> 列出已安装的全局依赖。</li>
+</ul>
+<h3 id="npm-outdated-检查过期依赖"><a href="#npm-outdated-检查过期依赖" class="headerlink" title="npm outdated 检查过期依赖"></a><code>npm outdated</code> 检查过期依赖</h3><h3 id="npm-update-更新依赖（快捷方式：up）"><a href="#npm-update-更新依赖（快捷方式：up）" class="headerlink" title="npm update 更新依赖（快捷方式：up）"></a><code>npm update</code> 更新依赖（快捷方式：<code>up</code>）</h3><ul>
+<li><code>xxx</code> 局部更新xxx。</li>
+<li><code>xxx -g</code> 全局更新xxx。</li>
+</ul>
+<h3 id="npm-root-查看依赖安装路径（也就是node-modules的路径）"><a href="#npm-root-查看依赖安装路径（也就是node-modules的路径）" class="headerlink" title="npm root 查看依赖安装路径（也就是node_modules的路径）"></a><code>npm root</code> 查看依赖安装路径（也就是<code>node_modules</code>的路径）</h3><ul>
+<li>默认查看局部安装路径。</li>
+<li><code>-g</code> 查看全局安装路径。</li>
+</ul>
+<h3 id="npm-view-查看模块的注册信息"><a href="#npm-view-查看模块的注册信息" class="headerlink" title="npm view 查看模块的注册信息"></a><code>npm view</code> 查看模块的注册信息</h3><ul>
+<li><code>xxx versions</code> 列出<code>xxx</code>的所有版本， 如：<code>npm view jquery versions</code>。</li>
+<li><code>xxx dependencies</code> 列出<code>xxx</code>的所有依赖， 如：<code>npm view gulp dependencies</code>。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://meritbox.github.io/2021/06/20/test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -333,20 +437,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-count">2</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
