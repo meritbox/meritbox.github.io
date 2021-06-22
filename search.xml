@@ -75,4 +75,21 @@
         <tag>速查</tag>
       </tags>
   </entry>
+  <entry>
+    <title>安卓开发中View的继承关系</title>
+    <url>/2021/06/22/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%ADView%E7%9A%84%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB/</url>
+    <content><![CDATA[<p><img src="/2021/06/22/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%ADView%E7%9A%84%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB/20190815100748544.png" alt="20190815100748544"></p>
+<p><img src="/2021/06/22/%E5%AE%89%E5%8D%93%E5%BC%80%E5%8F%91%E4%B8%ADView%E7%9A%84%E7%BB%A7%E6%89%BF%E5%85%B3%E7%B3%BB/20200927111003956.png" alt="20200927111003956"></p>
+<p>#####Window 类<br>　　位于 /frameworks/base/core/java/android/view/Window.java。该类是一个抽象类，提供了绘制窗口的一组通用API。可以将之理解为一个载体，各种View在这个载体上显示。</p>
+<p>#####PhoneWindow类</p>
+<p>　　位于/frameworks/policies/base/phone/com/android/internal/policy/impl/PhoneWindow.java。该类继承于Window类，是Window类的具体实现，即我们可以通过该类具体去绘制窗口。并且，该类内部包含了一个DecorView对象，该DectorView对象是所有应用窗口(Activity界面)的根View。 简而言之，PhoneWindow类是把一个FrameLayout类即DecorView对象进行一定的包装，将它作为应用窗口的根View，并提供一组通用的窗口操作接口。</p>
+<p>#####DecorView类<br>　　该类是PhoneWindow类的内部类。该类是一个FrameLayout的子类，并且是PhoneWindow的子类，该类就是对普通的FrameLayout进行功能的扩展，更确切点可以说是修饰(Decor的英文全称是Decoration，即“修饰”的意思)，比如说添加TitleBar(标题栏)，以及TitleBar上的滚动条等 。最重要的一点是，它是所有应用窗口的根View 。</p>
+]]></content>
+      <categories>
+        <category>安卓</category>
+      </categories>
+      <tags>
+        <tag>组件</tag>
+      </tags>
+  </entry>
 </search>
